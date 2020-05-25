@@ -4,7 +4,7 @@ shinyUI(
   theme=shinytheme("journal"),
   windowTitle="make circularbar barplot in R with shiny",
   
-  tabPanel("shinyCircularBar",
+  tabPanel("ShinyCircularBar",
     sidebarPanel(
       fileInput("data", h4("Choose data",bsButton("bs0", label="", icon=icon("question"), style="info", size="small"))
                 ,multiple = FALSE),
