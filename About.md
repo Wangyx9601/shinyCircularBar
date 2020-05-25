@@ -1,6 +1,6 @@
 
 
-   shinyCircularBar: make Circular Barplot interactively with R and Shiny
+   ShinyCircularBar: make Circular Barplot interactively with R and Shiny
 
 
 ## Software references  
