@@ -9,7 +9,7 @@ output:
 <h1><center>使用说明</center></h1>
  
 
-## **1.shinyCircularBar**
+## **1.ShinyCircularBar**
 
 **1.1 点击Browse上传本地数据，数据的格式应符合下列要求。**
 
