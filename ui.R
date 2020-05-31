@@ -8,22 +8,22 @@ shinyUI(
     sidebarPanel(
       fileInput("data", h4("Choose data",bsButton("bs0", label="", icon=icon("question"), style="info", size="small"))
                 ,multiple = FALSE),
-      bsPopover("bs0", "单击“Browse”上传数据，数据集应该具有两列，第一列为名称第二列为值", trigger = "focus"),
+      bsPopover("bs0", "单击“Browse”上传数据，数据集应该包含两列，第一列为名称，第二列为值", trigger = "focus"),
           h4("Plot options"),
           textInput("circularbarplotTitle", h4("Plot Title:",
                                      bsButton("bs1",label = "",icon = icon("question"),style = "info",size = "small")
                                      ),value = c("circular barplot")),
-          bsPopover("bs1","对该数据的绘图进行命名。",trigger = "focus"),
+          bsPopover("bs1","修改图片标题。",trigger = "focus"),
       h4("Choose fill color:",
          bsButton("bs2", label="", icon=icon("question"), style="info", size="small")
       ),
-      bsPopover("bs2", '对数据进行绘图时，填充渲染环状柱形图的颜色，且用户可根据自己喜好更改颜色。', trigger = "focus"),
+      bsPopover("bs2", '对数据进行绘图时，填充环状柱形图的颜色，且用户可根据自己喜好更改颜色。', trigger = "focus"),
       fluidRow(column(12, jscolorInput("var1", label = NULL, value = "#2B8CED"))),
       
       h4("Choose name color:",
          bsButton("bs3", label="", icon=icon("question"), style="info", size="small")
       ),
-      bsPopover("bs3", '对数据进行绘图时，对数据名称染色，用户可根据自己的喜好以及颜色对比的明显度进行调色。', trigger = "focus"),
+      bsPopover("bs3", '对数据进行绘图时，数据名称的颜色，用户可根据自己的喜好进行调色。', trigger = "focus"),
       fluidRow(column(12, jscolorInput("var2", label = NULL, value = "#0A0608")))
       ,
       sliderInput("var3", h4("Font size:"),
