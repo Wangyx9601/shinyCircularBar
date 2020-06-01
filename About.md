@@ -23,7 +23,7 @@
 
          
 ## Further references  
-This application was created by Haoran LI and <a href="http://www.researchgate.net/profile/Wen_Yao" target="_blank">Wen Yao</a>. Please send bugs and feature requests to Haoran Li (haoran5695.com) or Wen Yao (venyao@qq.com). This application uses the shiny package from <a href="http://www.rstudio.com/shiny/" target="_blank">RStudio</a>.  
+This application was created by Haoran Li, Yuxuan Wang and Wen Yao. Please send bugs and feature requests to Haoran Li (haoran5695.com) or Wen Yao (venyao@qq.com). This application uses the shiny package from <a href="http://www.rstudio.com/shiny/" target="_blank">RStudio</a>.  
 
   
 

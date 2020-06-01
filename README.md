@@ -6,7 +6,7 @@ This is the repository for the Shiny application presented in "ShinyCircularBar"
 *****
 #	Use ShinyCircularBar online
 
-ShinyCircularBar is deployed at  http://127.0.0.1:7858  for online use.  
+ShinyCircularBar is deployed at  http://150.109.59.144:3838/shinyCircularBar/  for online use.  
 ShinyCircularBar is idle until you activate it by accessing the URLs.  
 So, it may take some time when you access this URL for the first time.   
 Once it was activated, ShinyCircularBar could be used smoothly and easily.
@@ -120,7 +120,7 @@ $ chown -R shiny /srv/shiny-server/ShinyCircularBar
 $ start shiny-server  
 ```
 
-Now, the shinyCircularBar app is available at https://github.com/Wangyx9601/shinyCircularBar.  
+Now, the shinyCircularBar app is available at https://IPAddressOfTheServer:3838/shinyCircularBar.  
 
 
 =========
