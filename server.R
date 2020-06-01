@@ -74,6 +74,7 @@ output$downloadggplot.svg <- downloadHandler(
     angle= 90 - 360 * (label_data$id-0.5) /number_of_bar
     label_data$hjust<-ifelse( angle < -90, 1, 0)
     label_data$angle<-ifelse(angle < -90, angle+180, angle)
+	svg(file, width = input$cirBarWidth/72, height = input$cirBarHeight/72)    
     p2 <- ggplot(data, aes(x=as.factor(id), y=data[,2])) +
       geom_bar(stat="identity", fill=alpha(input$var1,0.7)) +
       labs(title = input$circularbarplotTitle)+
@@ -88,7 +89,9 @@ output$downloadggplot.svg <- downloadHandler(
       coord_polar(start = 0) +
       geom_text(data=label_data, aes(x=id, y=data[,2]+5,label=data[,1], hjust=hjust),
                 color=input$var2, fontface="bold",alpha=0.6, size=input$var3, angle= label_data$angle, inherit.aes = FALSE )
-    ggsave(file, plot=p2, width = input$cirBarWidth/72, height = input$cirBarHeight/72)
+
+	grid::grid.draw(p2)
+	dev.off()
   },
   contentType = "application/svg")
 }
